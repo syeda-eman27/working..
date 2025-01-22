@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+    <style>
+        .online{
+            font-size: 30px;
+            text-shadow: 2px 3px 4px brown;
+            text-align: center;
+        }
+        .convert{
+            width: 500px;
+            height: 200px;
+            background-color: rgba(152, 243, 243, 0.765);
+            text-align: center;
+            margin: 55px auto;
+            padding: 100px 0px 0px 0px;
+            border-radius: 10px;
+            border:10px solid purple;
+        }
+        label{
+            font-size: 25px;
+        }
+        .convert input{
+            background-color: rgba(234, 179, 179, 0.734);
+            width: 250px;
+            height: 25px;
+        }
+        .convert ::placeholder{
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="online">
+        <h1>ONLINE CONVERTER</h1>
+    </div>
+    <div class="convert">
+        <label for="">Dollar :</label>
+        <input type="text" name="dollar" placeholder="Dollar" id="dollar">
+        <br>
+        <br>
+        <label for="">Rupes :</label>
+        <input type="text" name="rup" placeholder="rup" id="rup">
+    </div>
+<script>
+    let dol = document.getElementById("dollar");
+    let rupe = document.getElementById("rup");
+
+    dol.addEventListener('input', function(){
+        let convert =this.value;
+        let r =convert*277.91;
+        rupe.value=r;
+    })
+    rupe.addEventListener('input', function(){
+        let convert =this.value;
+        let r =convert/277.91;
+        dol.value=r;
+    })
+
+
+
+
+
+
+
+
+
+
+    // let a = prompt("Enter your table number")
+    // let b = prompt("Enter A number ")
+    // for(let i ;i<b;i++){
+    //     console.log(`${a} = ${i} * ${i*b}`);
+    // }
+</script>
+</body>
+</html>

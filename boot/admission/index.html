@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container pt-5 pb-3">
+        <h1>COLLAGE ADMISSION FORM</h1>
+        <p class="fw-light">Enter your Admisson Information Below</p>
+    </div>
+    <hr>
+    <div class="container">
+        <form id="admissionForm" class="py-4">
+            <h5 class="pb-2">NAME</h5>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="firstName" required>
+                        <label for="firstName">First Name</label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="lastName" required>
+                        <label for="lastName">Middle Name</label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="firstName" required>
+                        <label for="firstName">First Name</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h5 class="pb-2">Birth Date</h5>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <select id="month" class="form-select" aria-label="Default select example">
+                            <option selected>--Please Select a Month--</option>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                        <label for="month">Month:</label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <select id="day" class="form-select" aria-label="Default select example">
+                            <option value="">--Please Select a Day--</option>
+                        </select>
+                        <label for="day">Day:</label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <select id="year" class="form-select" aria-label="Default select example">
+                            <option value="">--Please Select a Year--</option>
+                        </select>
+                        <label for="year">Year:</label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="pb-2">Gender</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                            <label class="form-check-label" for="male">
+                                Male
+                            </label>
+                        </div>
+                        <div class="col-md-6">
+                            <input class="form-check-input " type="radio" name="gender" id="female" value="female">
+                            <label class="form-check-label " for="female">
+                                Female
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="pb-2">Of Which Country are you a Citizen? </h5>
+                    <div class="form-group">
+                        <select id="year" class="form-select" aria-label="Default select example">
+                            <option value="">--Please Select --</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="pb-2">Phone</h5>
+                    <div class="form-group">
+                        <input type="number" class="form-control" id="lastName" placeholder="00 00000 0000">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="pb-2">E-mail Address </h5>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="lastName" required>
+                        <label for="E-mail">emxample@gmail.com</label>
+                    </div>
+                </div>
+            </div>
+            <h5 class="pb-2">Mailling Address</h5>
+            <div class="row">
+                <div class="form-group col-md-12 pb-4">
+                    <input type="text" class="form-control" id="lastName" required>
+                    <label for="Address">home Address</label>
+                </div>
+                <div class="form-group col-md-12 pb-4">
+                    <input type="text" class="form-control" id="lastName" required>
+                    <label for="Address">Home Address like 2</label>
+                </div>
+                <div class="form-group col-md-6 pb-4">
+                    <input type="text" class="form-control" id="lastName" required>
+                    <label for="City">City</label>
+                </div>
+                <div class="form-group col-md-6 pb-4">
+                    <input type="text" class="form-control" id="lastName" required>
+                    <label for="State">State/Province</label>
+                </div>
+                <div class="form-group col-md-12 pb-4">
+                    <input type="text" class="form-control" id="lastName" required>
+                    <label for="Postal Code">Postal/Zip Code</label>
+                </div>
+            </div>
+
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="pb-2">Emargency Contect</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" id="firstName" required>
+                            <label for="firstName">First Name</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" id="firstName" required>
+                            <label for="firstName">Last Name</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="pb-2">Relationship </h5>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="firstName" required>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h5 class="pb-2">Do You Speak any Langunage Other than English?</h5>
+            <div class="row">
+                <div class="col-md-6">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                    <label class="form-check-label" for="male">
+                        Yes
+                    </label>
+                </div>
+                <div class="col-md-6">
+                    <input class="form-check-input " type="radio" name="gender" id="female" value="female">
+                    <label class="form-check-label " for="female">
+                        No
+                    </label>
+                </div>
+            </div>
+            <br>
+            <p class="fw-light">Pleace txt them</p>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 150px"></textarea>
+            </div>
+        </form>
+    </div>
+<hr>
+<button type="button" class="btn btn-primary btn-lg px-4 m-2">Next</button>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

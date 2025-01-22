@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .btn {
+            width: 200px;
+            height: 95px;
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-weight: bolder;
+            border: 2px solid;
+            margin: 0 auto;
+        }
+
+        #dec,
+        #inc {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ADD-TO CARD </h1>
+    <div class="btn">
+        <div>
+            <span id="dec">-</span>
+            <span id="num">00</span>
+            <span id="inc">+</span>
+        </div>
+        <div>
+            <span>Total :</span>
+            <span id="price">00</span>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        let ince = document.getElementById("inc");
+        let decr = document.getElementById("dec");
+        let code = document.getElementById("num");
+        let price = document.getElementById("price");
+
+        let e = 0;
+        let f = 500;
+
+        function updateprice(){
+            let g= e*f;
+            price.innerHTML = g
+
+        }
+        ince.addEventListener('click', function () {
+            e++;
+            code.innerHTML = e
+            updateprice()
+        })
+        decr.addEventListener('click', function () {
+            if(e>1){
+                e--;
+            code.innerHTML = e
+            updateprice()
+            }
+          
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,303 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.add {
+    text-shadow: 4px 2px 9px #da4242;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.gate {
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+/* Navbar */
+.navbar-nav li:hover {
+    background-color: #ffcc00;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 20px;
+    font-weight: 800;
+}
+.nav-link{
+    color: #000;
+}
+
+.seacrh {
+    display: flex;
+    align-items: center
+}
+
+.seacrh input {
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    width: 350px;
+}
+
+.seacrh img {
+    margin: 0px 25px 0px 0px;
+}
+
+/* Hero Section */
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 4px 8px 5px rgba(43, 2, 2, 0.8);
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-weight: 500;
+}
+
+/* About Section */
+.about {
+    padding: 15px 0;
+    text-align: center;
+    text-shadow: 2px 6px 4px rgba(47, 93, 94, 0.837);
+    background-color: #c8d9e961;
+    color: #000;
+    font: 2.5em rosans-serif;
+    font-style: italic;
+    letter-spacing: 0.2em;
+    font-weight: 900;
+}
+
+.about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.lead{
+    font-size: 18px;
+    font-weight: 400;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Gallery Section */
+.gallery img {
+    cursor: pointer;
+    transition: transform 0.3s, opacity 0.3s;
+    border-radius: 5px;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+.gallery {
+    row-gap: 15px;
+}
+
+/* card section */
+.card-title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px #000000a4;
+    transition: transform 10s, box-shadow 0.9s;
+    padding: 10px;
+}
+.cards{
+    margin-left: 50px;
+}
+
+
+/* Buttons */
+.btn:hover {
+    transition: transform 0.3s, box-shadow 0.3s;
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Section */
+.bg-gradient {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+}
+
+.btn-gradient {
+    background: linear-gradient(135deg, #ff7eb3 0%, #ff758c 100%);
+    border: none;
+    color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-gradient:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+iframe{
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    width: 100%;
+}
+
+footer a {
+    color: #adb5bd;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.slide-in {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar{
+        width: 100%;
+    }
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-link a {
+        display: none;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+
+    .about {
+        font-size: 1.9rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    .btn {
+        margin-bottom: 10px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .cards {
+        margin-left: 85px;
+    }
+
+    footer {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .gallery img {
+        margin-bottom: 15px;
+        max-width: 100%;
+
+    }
+    /* contact section */
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+    .map{
+        margin-top: 20px;
+        width: 100%;
+        height: 300px;
+    }
+    .gallery-item img{
+    
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .about {
+        font-size: 1.5rem;
+    }
+
+    .lead {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        margin-bottom: 5px;
+    }
+
+    .card {
+        margin-bottom: 10px;
+    }
+
+    .cards {
+        margin-left: 0px;
+    }
+}
